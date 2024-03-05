@@ -10,3 +10,11 @@ Rails.application.routes.draw do
   # Define the root route
   get("/", { :controller => "users", :action => "new" })
 end
+
+# config/routes.rb
+
+Rails.application.routes.draw do
+  # other routes...
+
+  get 'my_cats', to: 'pages#my_cats'
+end
